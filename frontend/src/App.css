@@ -1,0 +1,181 @@
+/* Global styles for the overall look and feel */
+body {
+  /* Set a smooth, professional font */
+  font-family: 'Poppins', Arial, sans-serif;
+  /* Add a gradient background for visual appeal */
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  margin: 0;
+  padding: 0;
+  /* Center the main content on the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-screen height */
+}
+
+/* Main container styling */
+div {
+  width: 90%; /* Responsive width */
+  max-width: 900px; /* Limit maximum width */
+  /* Add a gradient background for depth */
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  padding: 30px; /* Space inside the container */
+  border-radius: 12px; /* Rounded corners */
+  /* Subtle shadow for an elevated look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center-align text */
+}
+
+/* Style for main heading */
+h1 {
+  font-size: 36px; /* Large font size */
+  font-weight: 700; /* Bold text */
+  /* Gradient text for a stylish heading */
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #feb47b);
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make background visible */
+  text-align: center; /* Center align heading */
+  margin-bottom: 30px; /* Space below heading */
+  /* Add a subtle shadow for depth */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for sub-headings */
+h2 {
+  font-weight: 600; /* Slightly bold */
+  color: #5b5f97; /* Distinct color */
+  margin-top: 20px; /* Space above */
+  font-size: 24px; /* Moderate size */
+  text-align: left; /* Align text to the left */
+}
+
+/* Styling for textarea (input box for questions) */
+textarea {
+  width: 100%; /* Full width */
+  padding: 15px; /* Space inside */
+  margin: 15px 0; /* Space around */
+  font-size: 16px; /* Readable font size */
+  /* Styled border with subtle rounded corners */
+  border: 2px solid black;
+  border-radius: 8px;
+  /* Gradient background for input area */
+  background: linear-gradient(145deg, #f8f8f8, #e6e6e6);
+  /* Light shadows for a 3D effect */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -2px -2px 8px rgba(255, 255, 255, 0.8);
+  resize: vertical; /* Allow resizing vertically */
+  min-height: 140px; /* Ensure a decent height */
+  outline: none; /* Remove default outline */
+  transition: box-shadow 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+textarea:focus {
+  /* Highlight textarea on focus */
+  box-shadow: 0 0 10px rgba(85, 85, 255, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01); /* Slight zoom effect */
+}
+
+/* Styling for buttons */
+button {
+  padding: 12px 25px; /* Comfortable size */
+  font-size: 16px; /* Readable font size */
+  font-weight: bold; /* Bold text */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 50px; /* Rounded button */
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient background */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  margin-bottom: 20px; /* Space below */
+}
+
+button:disabled {
+  background: #bbb; /* Gray color for disabled state */
+  cursor: not-allowed; /* Indicate disabled state */
+}
+
+button:hover:not(:disabled) {
+  /* Highlight button on hover */
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Styling for answer display */
+p {
+  /* Light gradient for answer box */
+  background: linear-gradient(145deg, #f8f8f8, #e6e6e6);
+  padding: 15px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  border: 2px solid black; /* Visible border */
+  /* Shadows for 3D effect */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -2px -2px 8px rgba(255, 255, 255, 0.8);
+  margin-top: 20px; /* Space above */
+  word-wrap: break-word; /* Ensure text wraps properly */
+  text-align: left; /* Align text to the left */
+  font-size: 16px; /* Readable font size */
+  line-height: 1.6; /* Comfortable line spacing */
+  transition: box-shadow 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  max-height: 300px; /* Limit height */
+  overflow-y: auto; /* Enable scrolling for overflow */
+}
+
+p:hover {
+  /* Highlight answer box on hover */
+  box-shadow: 0 0 10px rgba(85, 85, 255, 0.5), 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01); /* Slight zoom effect */
+}
+
+/* Styling for question history */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove inner padding */
+  max-height: 300px; /* Limit height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background: #f9f9f9; /* Light background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Inner spacing */
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+}
+
+li {
+  padding: 15px; /* Inner spacing */
+  margin-bottom: 10px; /* Space below */
+  background: linear-gradient(145deg, #f3f3f3, #e0e0e0); /* Light gradient */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -2px -2px 8px rgba(255, 255, 255, 0.8); /* 3D effect */
+  word-wrap: break-word; /* Ensure text wraps properly */
+  transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+li:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+li strong {
+  display: block; /* Display on a new line */
+  font-weight: 600; /* Bold text */
+  color: #333; /* Dark color for emphasis */
+  margin-bottom: 5px; /* Space below */
+}
+
+/* Scrollbar customization for history */
+ul::-webkit-scrollbar {
+  width: 8px; /* Narrow scrollbar */
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: linear-gradient(145deg, #6a11cb, #2575fc); /* Gradient thumb */
+  border-radius: 10px; /* Rounded edges */
+}
+
+ul::-webkit-scrollbar-track {
+  background: #f3f3f3; /* Light track color */
+}
+
+/* Styling for error messages */
+.error {
+  color: red; /* Highlight error text */
+  font-weight: bold; /* Bold for emphasis */
+  margin: 10px 0; /* Space around */
+}
